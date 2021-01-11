@@ -1,0 +1,11 @@
+What is the definition of server port?
+A way to identify the process where information from the internet or other
+network message is to be forwarded when it arrives at a server.
+
+What is server port range?
+
+
+How many bits does number above represent?
+
+
+State 10 common server ports.
