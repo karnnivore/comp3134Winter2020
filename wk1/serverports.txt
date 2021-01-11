@@ -3,9 +3,10 @@ A way to identify the process where information from the internet or other
 network message is to be forwarded when it arrives at a server.
 
 What is server port range?
-
+0-65353
 
 How many bits does number above represent?
-
+16-bit unsigned integer
 
 State 10 common server ports.
+443, 80, 21, 22, 110, 143, 995, 25, 587, 993
