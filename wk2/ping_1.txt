@@ -1,0 +1,119 @@
+C:\Users\nick_>ssh root@165.22.235.9
+The authenticity of host '165.22.235.9 (165.22.235.9)' can't be established.
+ECDSA key fingerprint is SHA256:SzhqC1UCECBjyWBokNWbVKP2uCeIGMJrODA4oyxUTfY.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '165.22.235.9' (ECDSA) to the list of known hosts.
+root@165.22.235.9's password:
+Permission denied, please try again.
+root@165.22.235.9's password:
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-42-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan 18 22:54:40 UTC 2021
+
+  System load:  0.03               Users logged in:       0
+  Usage of /:   12.1% of 24.06GB   IPv4 address for eth0: 165.22.235.9
+  Memory usage: 60%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    126
+
+94 updates can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://165.22.235.9
+
+On the server:
+ * The default web root is located at /var/www/html
+ * The MySQL root password is saved in /root/.digitalocean_password
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+root@comp3134:~# apt-get update
+Get:1 http://mirrors.digitalocean.com/ubuntu focal InRelease [265 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu focal-backports InRelease [101 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 Packages [760 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu focal-updates/main Translation-en [187 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 c-n-f Metadata [11.5 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu focal-updates/universe amd64 Packages [726 kB]
+Get:9 http://mirrors.digitalocean.com/ubuntu focal-updates/universe Translation-en [147 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [15.4 kB]
+Get:11 http://mirrors.digitalocean.com/ubuntu focal-updates/multiverse amd64 Packages [15.5 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [528 B]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [454 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [101 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [5832 B]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [526 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [71.1 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [9540 B]
+Fetched 3617 kB in 2s (2189 kB/s)
+Reading package lists... Done
+root@comp3134:~# apt-get install apache2-utils
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apache2-utils is already the newest version (2.4.41-4ubuntu3.1).
+0 upgraded, 0 newly installed, 0 to remove and 91 not upgraded.
+root@comp3134:~# ping 1.1.1.1
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=61 time=1.27 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=61 time=0.434 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=61 time=0.407 ms
+64 bytes from 1.1.1.1: icmp_seq=4 ttl=61 time=0.427 ms
+64 bytes from 1.1.1.1: icmp_seq=5 ttl=61 time=0.402 ms
+64 bytes from 1.1.1.1: icmp_seq=6 ttl=61 time=0.410 ms
+64 bytes from 1.1.1.1: icmp_seq=7 ttl=61 time=0.388 ms
+64 bytes from 1.1.1.1: icmp_seq=8 ttl=61 time=0.405 ms
+64 bytes from 1.1.1.1: icmp_seq=9 ttl=61 time=0.433 ms
+64 bytes from 1.1.1.1: icmp_seq=10 ttl=61 time=0.420 ms
+64 bytes from 1.1.1.1: icmp_seq=11 ttl=61 time=0.390 ms
+64 bytes from 1.1.1.1: icmp_seq=12 ttl=61 time=0.439 ms
+64 bytes from 1.1.1.1: icmp_seq=13 ttl=61 time=0.387 ms
+64 bytes from 1.1.1.1: icmp_seq=14 ttl=61 time=0.437 ms
+64 bytes from 1.1.1.1: icmp_seq=15 ttl=61 time=0.467 ms
+64 bytes from 1.1.1.1: icmp_seq=16 ttl=61 time=0.394 ms
+64 bytes from 1.1.1.1: icmp_seq=17 ttl=61 time=0.471 ms
+64 bytes from 1.1.1.1: icmp_seq=18 ttl=61 time=0.374 ms
+64 bytes from 1.1.1.1: icmp_seq=19 ttl=61 time=0.416 ms
+64 bytes from 1.1.1.1: icmp_seq=20 ttl=61 time=0.393 ms
+64 bytes from 1.1.1.1: icmp_seq=21 ttl=61 time=0.424 ms
+^C
+--- 1.1.1.1 ping statistics ---
+21 packets transmitted, 21 received, 0% packet loss, time 20457ms
+rtt min/avg/max/mdev = 0.374/0.456/1.273/0.184 ms
+root@comp3134:~# ping 1.1.1.1 -w 10
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=61 time=1.18 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=61 time=0.419 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=61 time=0.437 ms
+64 bytes from 1.1.1.1: icmp_seq=4 ttl=61 time=0.564 ms
+64 bytes from 1.1.1.1: icmp_seq=5 ttl=61 time=0.388 ms
+64 bytes from 1.1.1.1: icmp_seq=6 ttl=61 time=0.423 ms
+64 bytes from 1.1.1.1: icmp_seq=7 ttl=61 time=0.408 ms
+64 bytes from 1.1.1.1: icmp_seq=8 ttl=61 time=0.389 ms
+64 bytes from 1.1.1.1: icmp_seq=9 ttl=61 time=0.400 ms
+64 bytes from 1.1.1.1: icmp_seq=10 ttl=61 time=0.399 ms
+
+--- 1.1.1.1 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9198ms
+rtt min/avg/max/mdev = 0.388/0.500/1.176/0.230 ms
+root@comp3134:~#

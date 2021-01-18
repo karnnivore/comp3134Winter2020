@@ -1,0 +1,19 @@
+URL 1: www.nickchinsen.com
+IP: http://3tf61ir4y9jgx.cloudfront.net./13.224.2.90
+Location: Seattle, Washington, USA
+
+URL 2: www.georgebrown.ca
+IP: mzcms01.georgebrown.ca./198.96.86.100
+Location: Toronto, Ontario, Canada
+
+URL 3: www.brainlab.com
+IP: ww.brainlab.com.cdn.cloudflare.net./104.20.27.56
+Location: San Francisco, California, USA
+
+URL 4: www.leetcode.com
+IP: ww.leetcode.com./172.67.138.83
+Location: San Francisco, California, USA
+
+URL 5: www.hackerrank.com
+IP: 8937.dscb.akamaiedge.net./104.99.95.182
+Location: Seattle, Washington, USA

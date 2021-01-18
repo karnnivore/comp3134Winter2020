@@ -1,0 +1,77 @@
+Command 1: nmap www.reddit.com
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-18 23:50 UTC
+Nmap scan report for www.reddit.com (151.101.1.140)
+Host is up (0.00049s latency).
+Other addresses for www.reddit.com (not scanned): 151.101.65.140 151.101.129.140 151.101.193.140
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 15.55 seconds
+
+
+Command 2: nmap -p 80 www.reddit.com
+
+root@comp3134:~# nmap -p 80 www.reddit.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-18 23:52 UTC
+Nmap scan report for www.reddit.com (151.101.1.140)
+Host is up (0.0011s latency).
+Other addresses for www.reddit.com (not scanned): 151.101.65.140 151.101.129.140 151.101.193.140
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 11.08 seconds
+
+
+Command 3: nmap -p 80-100 www.reddit.com
+
+root@comp3134:~# nmap -p 80-100 www.reddit.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-18 23:53 UTC
+Nmap scan report for www.reddit.com (151.101.1.140)
+Host is up (0.00094s latency).
+Other addresses for www.reddit.com (not scanned): 151.101.65.140 151.101.129.140 151.101.193.140
+
+PORT    STATE    SERVICE
+80/tcp  open     http
+81/tcp  filtered hosts2-ns
+82/tcp  filtered xfer
+83/tcp  filtered mit-ml-dev
+84/tcp  filtered ctf
+85/tcp  filtered mit-ml-dev
+86/tcp  filtered mfcobol
+87/tcp  filtered priv-term-l
+88/tcp  filtered kerberos-sec
+89/tcp  filtered su-mit-tg
+90/tcp  filtered dnsix
+91/tcp  filtered mit-dov
+92/tcp  filtered npp
+93/tcp  filtered dcp
+94/tcp  filtered objcall
+95/tcp  filtered supdup
+96/tcp  filtered dixie
+97/tcp  filtered swift-rvf
+98/tcp  filtered linuxconf
+99/tcp  filtered metagram
+100/tcp filtered newacct
+
+Nmap done: 1 IP address (1 host up) scanned in 12.50 seconds
+
+Command 4: nmap -F www.wealthsimple.com 
+
+root@comp3134:~# nmap -F www.wealthsimple.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-18 23:54 UTC
+Nmap scan report for www.wealthsimple.com (104.16.76.107)
+Host is up (0.012s latency).
+Other addresses for www.wealthsimple.com (not scanned): 104.16.75.107
+Not shown: 96 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 12.76 seconds
+
