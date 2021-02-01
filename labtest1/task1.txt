@@ -1,0 +1,7 @@
+Company: Mopify
+CEO: Alex Herbert
+CFO: Alex Herbert
+President: Alex Herbert
+Current job positings: 10
+Headquarter locations: (main) Ottawa
+
