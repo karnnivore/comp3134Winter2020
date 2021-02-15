@@ -1,0 +1,9 @@
+root@comp3134:~# tcpdump -r 0001.pcap
+
+reading from file 0001.pcap, link-type EN10MB (Ethernet)
+20:37:02.181654 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 3906713451:3906713487, ack 2104290716, win 501, length 36
+20:37:02.182445 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 36:80, ack 1, win 501, length 44
+20:37:02.182531 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 80:188, ack 1, win 501, length 108
+20:37:02.182590 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 188:224, ack 1, win 501, length 36
+20:37:02.183477 IP 76.71.137.116.50972 > 165.22.235.9.ssh: Flags [.], ack 80, win 1022, length 0
+20:37:02.183504 IP 76.71.137.116.50972 > 165.22.235.9.ssh: Flags [.], ack 224, win 1021, length 0

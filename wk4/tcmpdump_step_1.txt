@@ -1,0 +1,7 @@
+root@comp3134:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+20:31:45.646506 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 3906694287:3906694395, ack 2104285172, win 501, length 108
+20:31:45.646573 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 108:144, ack 1, win 501, length 36
+20:31:45.646639 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 144:252, ack 1, win 501, length 108
+20:31:45.646746 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 252:288, ack 1, win 501, length 36

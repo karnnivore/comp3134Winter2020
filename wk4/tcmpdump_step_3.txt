@@ -1,0 +1,12 @@
+root@comp3134:~# tcpdump -A -i eth0
+
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+20:33:51.101715 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 3906701111:3906701219, ack 2104287080, win 501, length 108
+E.....@.@...... LG.t.......7}l.hP...fb....J.X.w|..W.-..*.j^..|&..&/.u^.....1{.4....r.........O.q..C.4q.x..... #|'Z...1...5.../s.%4..$R....p....gG!.@
+20:33:51.101789 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 108:144, ack 1, win 501, length 36
+E..L..@.@..-... LG.t........}l.hP...f...fA].o:.a%,..7d...ZA...e.C.e.....        ..r
+20:33:51.101854 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 144:252, ack 1, win 501, length 108
+E.....@.@...... LG.t........}l.hP...fb..b..k..U3O..bib.h....P.U}.^i4*...t../........IV..S_-.....^.85...8._Ag..@.X......=......|....#.M..Fq....``n&'}
+20:33:51.101908 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 252:288, ack 1, win 501, length 36
+E..L..@.@..+... LG.t.......3}l.hP...f...Ys....$..a.>.dG...Em.E.q..7G.j.f..Z.

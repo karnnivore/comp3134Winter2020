@@ -1,0 +1,18 @@
+root@comp3134:~# tcpdump -i eth0 tcp
+
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+20:41:18.681764 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 3927235879:3927235915, ack 2104306536, win 501, length 36
+20:41:18.683775 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 36:144, ack 1, win 501, length 108
+20:41:18.683860 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 144:180, ack 1, win 501, length 36
+20:41:18.683934 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 180:288, ack 1, win 501, length 108
+20:41:18.683980 IP 165.22.235.9.ssh > 76.71.137.116.50972: Flags [P.], seq 288:324, ack 1, win 501, length 36
+20:41:18.684919 IP 76.71.137.116.50972 > 165.22.235.9.ssh: Flags [.], ack 144, win 8209, length 0
+20:41:18.684940 IP 76.71.137.116.50972 > 165.22.235.9.ssh: Flags [.], ack 288, win 8209, length 0
+20:41:18.726804 IP 76.71.137.116.50972 > 165.22.235.9.ssh: Flags [.], ack 324, win 8208, length 0
+^C
+20:41:18.896241 IP 165.22.235.9.http > 164.114.46.243.44345: Flags [S.], seq 681943984, ack 62520638, win 64240, options [mss 1460], length 0
+
+9 packets captured
+89 packets received by filter
+49 packets dropped by kernel
